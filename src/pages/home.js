@@ -4,6 +4,8 @@ import { HeroComponent } from "../components/content/heroComponent";
 import { SkillBarComponent } from "../components/content/skillbarComponent";
 import { OtherComponent } from "../components/content/otherComponent";
 import { ProjectComponent } from "../components/content/projectComponent";
+import { FooterComponent } from "../components/footerComponent";
+
 
 export function Home(){
 
@@ -31,6 +33,7 @@ export function Home(){
         <br/>
         <OtherComponent/>
         <ProjectComponent/>
+        <FooterComponent/>
         </>
     )
 }
