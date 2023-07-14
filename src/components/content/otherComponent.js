@@ -5,7 +5,7 @@ import {GiWaterfall} from "react-icons/gi";
 import {DiScrum} from "react-icons/di";
 export function OtherComponent() {
   return (
-    <div className="flex items-center flex-col w-full gap-10 ">
+    <div className="flex items-center flex-col w-full gap-8 ">
       <div className="flex flex-grow items-center justify-between ">
         <h1 className="text-3xl text-left w-[20%] font-extrabold">
           {" "}
@@ -17,7 +17,7 @@ export function OtherComponent() {
           during fieldwork and internships
         </p>
       </div>
-      <div className="flex w-[60%] justify-between ">
+      <div className="flex w-[60%] justify-between py-6 ">
         <div className="flex flex-col gap- w-[30%] border border-[#8AAAE5] p-5 rounded-md">
           <div className="flex justify-center items-center gap-10 p-5 text-[#8AAAE5]">
             <FaGithub size={40} />

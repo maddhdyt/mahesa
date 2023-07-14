@@ -1,9 +1,9 @@
 import React from "react";
 
-export function HeaderComponent(){
+export function HeaderComponent({status}){
     return(
         <>
-        <div className="fixed z-10 flex px-10 py-5 justify-between items-center w-full ">
+        <div className={`fixed z-10 flex px-12 py-5 justify-between items-center w-full ease-in-out duration-300 ${ status ? "bg-white" : "bg-none"}`} >
             <div className=" text-[#8AAAE5] text-3xl font-bold" > MahesaSyawalA </div>
             <div className="flex justify-between gap-36 items-center" >
                 <ul className="flex gap-8 text-gray-400">
