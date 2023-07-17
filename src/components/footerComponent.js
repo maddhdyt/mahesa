@@ -5,7 +5,7 @@ export function FooterComponent() {
   return (
     <div className="flex flex-col justify-between items-center w-full h-[400px] bg-gradient-to-t from-slate-200 via-slate-100">
       <div className="flex w-full h-[68%]">
-        <div className=" flex w-[40%] h-full items-center text-left text- text-[#8AAAE5] font-bold px-7  ">
+        {/* <div className=" flex w-[40%] h-full items-center text-left text-[#8AAAE5] font-bold px-7  ">
           I would like to express my sincere gratitude for visiting my website
           profile. Your presence is truly appreciated, and I am thankful for the
           time you have taken to explore my work.
@@ -14,6 +14,11 @@ export function FooterComponent() {
           engagement are invaluable, and I am truly grateful for your visit.
           Thank you once again for stopping by, and I hope you found my website
           informative and enjoyable.
+        </div> */}
+        <div className="flex flex-col w-[40%] h-full justify-center text-left text-[#8AAAE5] font-bold px-7 ">
+        <h1 className=" uppercase py-2 text-2xl font-extrabold"> Send Me Massage!!</h1>
+        <input className=" h-8 w-full border-b-2 bg-transparent text-sm text-slate-400  placeholder-slate-300  focus:outline-none  " placeholder=" Input Your Email " ></input>
+        <textarea className=" h-8 w-full border-b-2 bg-transparent text-sm text-slate-400  placeholder-slate-300 mt-6 focus:outline-none  " placeholder=" Send Your Massage " ></textarea>
         </div>
         <div className=" rounded-full w-[20%] h-full bg-gradient-to-t from-slate-100  ">
           <div
