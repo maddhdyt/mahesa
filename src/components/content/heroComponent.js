@@ -7,7 +7,7 @@ export function HeroComponent() {
       <div className="absolute w-[50%] h-[100%] bg-gradient-to-br from-[#8AAAE5] bg-opacity-0 blur-3xl rounded-full -top-[20%] -left-[40%] border"></div>
       <div className="absolute -z-10 w-[80%] h-[100%] bg-gradient-to-br from-[#8AAAE5] bg-opacity-0 blur-3xl rounded-full -bottom-[50%] -right-[75%] "></div>
       <div className=" flex justify-center gap-10  h-[80%] w-[90%]">
-        <div className="flex flex-col gap-10 w-[50%] h-full">
+        <div className="flex flex-col gap-10 pt-4 w-[50%] h-full">
           <h2 className="text-7xl font-extrabold text-left">
             Unveiling the Essence of Me My Personal Profile Journey
           </h2>
@@ -17,7 +17,7 @@ export function HeroComponent() {
             inspiring impressions, and dreams I'm pursuing together.
           </p>
         </div>
-        <div className=" bg-gradient-to-br from-[#8AAAE5] bg-opacity-0  w-[35%] h-[80%] rounded-full ">
+        <div className=" bg-gradient-to-br from-[#8AAAE5] bg-opacity-0  w-[35%] h-[78%] rounded-full ">
           <div className=" w-[100%] h-[100%] bg-cover bg-center rounded-full "
         style={{
           backgroundImage: `url(${Image1})`

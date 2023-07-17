@@ -5,7 +5,7 @@ import { SkillBarComponent } from "../components/content/skillbarComponent";
 import { OtherComponent } from "../components/content/otherComponent";
 import { ProjectComponent } from "../components/content/projectComponent";
 import { FooterComponent } from "../components/footerComponent";
-
+import { AboutComponent } from "../components/content/aboutComponent";
 
 export function Home(){
 
@@ -27,12 +27,12 @@ export function Home(){
         <>
         <HeaderComponent status={statusNavbar}/>
         <HeroComponent/>
+        <AboutComponent/>
         <SkillBarComponent/>
         <br/>
         <br/>
-        <br/>
-        <OtherComponent/>
         <ProjectComponent/>
+        <OtherComponent/>
         <FooterComponent/>
         </>
     )

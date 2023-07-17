@@ -10,7 +10,7 @@ export function ProjectComponent() {
       title: "Sagara Perspective",
       description:
         "  Melalui platform ini, pengguna dapat dengan mudah mengakses dan mengunduh buku-buku yang berisi hasil dari diskusi yang relevan dan bermanfaat. Website kami menyediakan beragam topik diskusi, mulai dari politik, lingkungan, pendidikan, hingga budaya, dengan tujuan untuk memfasilitasi pertukaran ide dan pemikiran yang berdampak positif.<br> Dengan antarmuka yang intuitif dan fitur pencarian yang canggih, kami berharap website kami menjadi sumber daya yangberharga bagi individu, akademisi, dan praktisi dalam upaya mereka untuk memperluas pengetahuan dan perspektif mereka. ",
-      site: "https://mahesa.vercel.app/",
+      site: "https://fgd-sagara.vercel.app/",
       repository: "https://github.com/MahesaSyawalA/mahesa ",
       image: `${ ImgSagara }` ,
     },
@@ -42,15 +42,20 @@ export function ProjectComponent() {
     setCurrentIndex(newIndex);
   };
 
+  const redirectAnotherPage = () => {
+    window.location.href = projectData[currentIndex].site ;
+  }
+
   console.log(projectData[currentIndex].iamge)
   return (
-    <div className=" flex flex-col w-full h-[600px] gap-5 px-52 py-10">
-      <div className=" flex items-center h-full w-full gap-4 py-10 rounded-lg ">
+    <div className=" flex flex-col w-full h-[700px] px-52 py-10">
+      <div className=" flex items-end justify-center h-[10%] text-5xl font-extrabold "> Example Project</div>
+      <div className=" flex items-center h-[80%] w-full gap-4 pb-10 rounded-lg ">
         <button className=" text-[#8AAAE5]">
           <HiChevronLeft size={30} onClick={prevSlide} />
         </button>
         <div className="w-1/2 h-full flex flex-col py-9 justify-between bg-center ease-out duration-700  ">
-          <h1 className=" text-left text-4xl font-black  ">
+          <h1 className=" text-left text-4xl font-black text-[#8AAAE5] ">
             {projectData[currentIndex].title}
           </h1>
           <p
@@ -60,11 +65,12 @@ export function ProjectComponent() {
             className=" text-gray-500 text-left text-sm"
           ></p>
           <div className="flex gap-4">
-            <button className="border py-1 px-10 rounded-md bg-[#8AAAE5] text-white font-extrabold">
+            <button className="border py-1 px-10 rounded-md bg-[#8AAAE5] text-white font-extrabold" 
+            onClick={redirectAnotherPage}>
               Live Preview
             </button>
-            <button className="border py-1 px-10 rounded-md text-[#8AAAE5] font-extrabold">
-              GitLab Repo
+            <button className="border py-1 px-8 rounded-md text-[#8AAAE5] font-extrabold">
+              Git Repository
             </button>
           </div>
         </div>
