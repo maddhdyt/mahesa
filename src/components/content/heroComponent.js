@@ -1,7 +1,6 @@
 import React from "react";
-import Image1 from "../../assets/image/gambar1.png"; 
 
-export function HeroComponent() {
+export function HeroComponent({Gambar1}) {
   return (
     <div className=" border-black flex justify-center items-center w-full h-[760px] pt-20">
       <div className="absolute w-[50%] h-[100%] bg-gradient-to-br from-[#8AAAE5] bg-opacity-0 blur-3xl rounded-full -top-[20%] -left-[40%] border"></div>
@@ -20,7 +19,7 @@ export function HeroComponent() {
         <div className=" bg-gradient-to-br from-[#8AAAE5] bg-opacity-0  w-[35%] h-[78%] rounded-full ">
           <div className=" w-[100%] h-[100%] bg-cover bg-center rounded-full "
         style={{
-          backgroundImage: `url(${Image1})`
+          backgroundImage: `url(${Gambar1})`
         }}></div>
 
         </div>
