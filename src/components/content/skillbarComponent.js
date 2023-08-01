@@ -3,33 +3,33 @@ import { FaLaravel, FaReact,FaHtml5,FaCss3Alt,FaJsSquare,FaBootstrap, } from "re
 import { SiTailwindcss } from "react-icons/si"
 export function SkillBarComponent() {
   return (
-    <div className=" flex items-center flex-col w-full py-4 bg-slate-100 ">
-      <h1 className="text-2xl font-extrabold">
+    <div className=" flex items-center flex-col w-full py-2 lg:py-4 bg-slate-100 ">
+      <h1 className="text-lg lg:text-2xl font-extrabold">
         My Programming Language <span className="text-[#8AAAE5]">& Framework</span>  
       </h1>
-      <div className="flex justify-between p-8 gap-24">
-        <div className="flex gap- items-center flex-col text-[#8AAAE5]">
-          <div className="flex justify-between">
-            <FaHtml5 size={40}/>
-            <FaCss3Alt size={40}/>
-            <FaJsSquare size={40}/>
+      <div className="flex justify-between p-2 lg:p-8 gap-5 lg:gap-24 text-xs lg:text-base">
+        <div className="flex gap-1 items-center flex-col text-[#8AAAE5] ">
+          <div className="flex flex-shrink justify-between ">
+            <FaHtml5 className=" text-[30px] lg:text-[40px] "/>
+            <FaCss3Alt className=" text-[30px] lg:text-[40px] "/>
+            <FaJsSquare className=" text-[30px] lg:text-[40px] "/>
           </div>
-          <p className="font-bold ">Basic Web Developer</p>
+          <p className="font-bold">Basic Web Developer</p>
         </div>
         <div className="flex gap-1 items-center flex-col text-[#8AAAE5]">
-          <FaBootstrap size={40} />
+          <FaBootstrap className=" text-[30px] lg:text-[40px] " />
           <p className="font-bold ">Bootstrap</p>
         </div>
         <div className="flex gap-1 items-center flex-col text-[#8AAAE5]">
-          <SiTailwindcss size={40} />
+          <SiTailwindcss className=" text-[30px] lg:text-[40px] " />
           <p className="font-bold ">Tailwind</p>
         </div>
         <div className="flex gap-1 items-center flex-col text-[#8AAAE5]">
-          <FaLaravel size={40} />
+          <FaLaravel className=" text-[30px] lg:text-[40px] " />
           <p className="font-bold ">Laravel</p>
         </div>
         <div className="flex gap-1 items-center flex-col text-[#8AAAE5]">
-          <FaReact size={40} />
+          <FaReact className=" text-[30px] lg:text-[40px] " />
           <p className="font-bold ">ReactJs</p>
         </div>
       </div>
