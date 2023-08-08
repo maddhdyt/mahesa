@@ -13,8 +13,8 @@ export function OtherComponent() {
           <br /> My Skills
         </h1>
         <p className="text-left text-sm lg:text-md font-bold text-[#8AAAE5]">
-          Another useful skill in the field of web development, which I learned
-          during fieldwork and internships
+        Another useful skills in the field of web development, which I learned
+          during in the job training and internships
         </p>
       </div>
       <div className="flex flex-col lg:flex-row gap-4 lg:gap-0 w-full lg:w-[60%] justify-between py-2 lg:py-6 ">
