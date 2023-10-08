@@ -5,7 +5,7 @@ import {GiWaterfall} from "react-icons/gi";
 import {DiScrum} from "react-icons/di";
 export function OtherComponent() {
   return (
-    <div className="px-8 lg:px-0 pb-36 flex items-center flex-col w-full gap-8 ">
+    <div id="other" className="px-8 pt-[100px] lg:px-0 pb-36 flex items-center flex-col w-full gap-8 ">
       <div className="flex flex-grow items-center justify-between gap-3 lg:gap-0">
         <h1 className="text-xl lg:text-3xl text-left lg:w-[20%] font-extrabold">
           {" "}

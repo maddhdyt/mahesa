@@ -9,7 +9,7 @@ import Learning from "../../assets/icon/learning.png";
 export function AboutComponent() {
   const experience = [
     {
-      time: "MEI 2023 - Present",
+      time: "MEI 2023 - AUG 2023",
       position: "Front-End Developer",
       descripion: "",
       company: "Sagara Technology",
@@ -23,7 +23,7 @@ export function AboutComponent() {
   ];
 
   return (
-    <div className=" flex flex-col lg:flex-row justify-center w-full h-[300px] lg:h-[680px] px-9 lg:px-56 lg:py-14">
+    <div id="about" className=" flex flex-col lg:flex-row justify-center w-full h-[300px] lg:h-[680px]  py-9 lg:px-56 lg:pt-[100px] lg:pb-14">
       <div className="-z-10 -left-20 mt-96 rounded-full blur-3xl bg-gradient-to-r from-[#8AAAE5]  absolute w-[30%] h-[40%] "></div>
       <div className=" flex flex-row items-center lg:items-start lg:flex-col w-full lg:w-1/2 h-1/2 lg:h-full lg:py-10">
         <div className=" justify-center flex flex-col h-[45%] w-[75%] gap-4">

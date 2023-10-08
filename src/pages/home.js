@@ -45,7 +45,6 @@ export function Home() {
     }
   };
   window.addEventListener("scroll", changeBackground);
-  console.log(statusNavbar);
 
   return (
     <>
@@ -53,6 +52,7 @@ export function Home() {
         <LoadingScreen />
       ) : (
         <div>
+          { window.removeEventListener("scroll", changeBackground) }
           <HeaderComponent status={statusNavbar} />
           <HeroComponent Gambar1={Gambar1} />
           <AboutComponent />

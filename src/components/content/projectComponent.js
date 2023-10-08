@@ -46,9 +46,8 @@ export function ProjectComponent() {
     window.location.href = projectData[currentIndex].site ;
   }
 
-  console.log(projectData[currentIndex].iamge)
   return (
-    <div className=" hidden lg:flex flex-col w-full h-[700px] px-52 py-10">
+    <div id="project" className=" hidden lg:flex flex-col w-full h-[700px] px-52 lg:pt-[100px] lg:pb-10">
       <div className=" flex items-end justify-center h-[10%] text-5xl font-extrabold "> Example Project</div>
       <div className=" flex items-center h-[80%] w-full gap-4 pb-10 rounded-lg ">
         <button className=" text-[#8AAAE5]">

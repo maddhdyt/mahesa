@@ -1,5 +1,5 @@
 import React from "react";
-import { FaGithub, FaGitlab, FaInstagram, FaWhatsapp } from "react-icons/fa";
+import { FaGithub, FaGitlab, FaInstagram, FaLinkedin, FaWhatsapp } from "react-icons/fa";
 import { BiLogoGmail } from "react-icons/bi";
 export function FooterComponent() {
   return (
@@ -13,16 +13,19 @@ export function FooterComponent() {
           Die As A Trash
         </h1>
         <div className="flex text-[10px] lg:text-base ">
-          <ul className="">
-            <li className="font-semibold">Contact & My Social Media</li>
-            <li className="flex gap-2 items-center">
+          <ul className="flex flex-col gap-1">
+            <li className="font-bold text-lg">Contact & My Social Media</li>
+            <li className="flex gap-2 items-center" onClick={() =>{ window.location.href = 'mailto:mahesaabd7@gmail.com' }}>
               <BiLogoGmail size={20} /> mahesaabd7@gmail.com
             </li>
-            <li className="flex gap-2 items-center">
+            <li className="flex gap-2 items-center" onClick={() =>{ window.location.href = ' https://wa.me/+6281220148738' }} >
               <FaWhatsapp size={20} /> +62-8122-0148-738
             </li>
-            <li className="flex gap-2 items-center">
-              <FaInstagram size={20} /> @abdmahesa
+            <li className="flex gap-2 items-center" onClick={() =>{ window.location.href = 'https://www.instagram.com/yojusinici/' }}>
+              <FaInstagram size={20} /> @yojusinici
+            </li>
+            <li className="flex gap-2 items-center" onClick={() =>{ window.location.href = 'https://www.linkedin.com/in/mahesa-syawal-abdurahman-872357287/' }}>
+              <FaLinkedin size={20} /> Mahesa Syawal Abdurahman
             </li>
           </ul>
         </div>
@@ -30,9 +33,8 @@ export function FooterComponent() {
       <div className="flex items-center justify-between py-5 border-t-2 border-white text-xs lg:text-sm text-white">
         <p>&copy;2023 Mahesa Syawal Abdurahman</p>
         <div className="flex gap-1 lg:gap-3">
-          <FaInstagram size={20} color="white" />
-          <FaGithub size={20} color="white" />
-          <FaGitlab size={20} color="white" />
+          <FaGithub size={20} color="white" onClick={() =>{ window.location.href = 'https://github.com/MahesaSyawalA' }}/>
+          <FaGitlab size={20} color="white" onClick={() =>{ window.location.href = 'https://gitlab.com/MahesaSyawalA' }}/>
         </div>
       </div>
     </div>
