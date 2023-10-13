@@ -38,7 +38,7 @@ export function Home() {
   }, []);
 
   const changeBackground = () => {
-    if (window.scrollY >= 20) { 
+    if (window.scrollY >= 60) { 
       setStatusNavbar(true);
     } else {
       setStatusNavbar(false);

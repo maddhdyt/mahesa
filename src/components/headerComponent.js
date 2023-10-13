@@ -15,19 +15,19 @@ export function HeaderComponent({status}){
             <div className="flex justify-between gap-36 items-center" >
                 <ul className="hidden lg:flex  gap-8 text-[#8AAAE5]">
                     <li
-                     className={`${active === 'hero' ? 'font-bold': ''}`}
+                     className={`${active === 'hero' ? 'font-bold': ''} cursor-pointer`}
                     onClick={() => Scroll('hero')}
                      >Hero</li>
                     <li
-                    className={`${active === 'about' ? 'font-bold': ''}`}
+                    className={`${active === 'about' ? 'font-bold': ''} cursor-pointer`}
                     onClick={() => Scroll('about')}
                     >About Me</li>
                     <li
-                    className={`${active === 'project' ? 'font-bold': ''}`}
+                    className={`${active === 'project' ? 'font-bold': ''} cursor-pointer`}
                     onClick={() => Scroll('project')}
                     >Portofolio</li>
                     <li
-                    className={`${active === 'other' ? 'font-bold': ''}`}
+                    className={`${active === 'other' ? 'font-bold': ''} cursor-pointer`}
                     onClick={() => Scroll('other')}
                     >Other Skils</li>
                 </ul>
