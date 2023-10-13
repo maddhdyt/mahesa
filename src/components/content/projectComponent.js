@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import ImgSagara from "../../assets/image/sagaraPerspective.jpeg";
-import sagara from "../../assets/image/SAGARA.jpeg";
+import sagara from "../../assets/image/sagara.jpeg";
 import { HiChevronLeft, HiChevronRight } from "react-icons/hi";
 export function ProjectComponent() {
   const [currentIndex, setCurrentIndex] = useState(0);
